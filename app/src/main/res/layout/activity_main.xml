@@ -24,11 +24,11 @@
         android:layout_height="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/bell" />
+        app:layout_constraintVertical_bias="0.376"
+        app:srcCompat="@drawable/bell3" />
 
     <TextView
         android:id="@+id/textView"
@@ -40,25 +40,26 @@
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.563" />
+        app:layout_constraintVertical_bias="0.566" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="165dp"
         android:layout_height="58dp"
-        android:color="#000000"
         android:onClick="Go"
         android:text="start"
-        android:textColor="@color/black"
-        app:backgroundTint="#DC963D"
+        android:textColor="@color/white"
+        android:background="#2196F3"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
         app:layout_constraintVertical_bias="1.1" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

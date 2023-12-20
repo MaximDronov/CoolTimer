@@ -2,13 +2,13 @@
 <resources>
     
     <array name="pref_timer_melody_labels">
-        <item>Bell</item>
-        <item>Alarm Siren</item>
-        <item>Bip</item>
+        <item>Sound-bell-1</item>
+        <item>Sound-bell-2</item>
+        <item>Sound-bell-3</item>
     </array>
     <array name="pref_timer_melody_values">
-        <item>bell</item>
-        <item>alarm_siren</item>
-        <item>bip</item>
+        <item>sound-bell-1</item>
+        <item>sound-bell-2</item>
+        <item>sound-bell-3</item>
     </array>
 </resources>

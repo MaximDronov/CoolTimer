@@ -14,14 +14,10 @@ import android.view.MenuItem;
 import android.view.View;
 
 import android.media.MediaPlayer;
-import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
@@ -114,14 +110,14 @@ public class MainActivity extends AppCompatActivity implements SharedPreferences
                     if(sharedPreferences.getBoolean("enable_sound", true)){
 
                         String melodyName = sharedPreferences.getString("timer_melody","bell");
-                        if(melodyName.equals("bell")){
-                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bell_sound);
+                        if(melodyName.equals("sound-bell-1")){
+                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound_bell_1);
                             mediaPlayer.start();
-                        }else if(melodyName.equals("alarm_siren")){
-                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.alarm_sound);
+                        }else if(melodyName.equals("sound-bell-2")){
+                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound_bell_3);
                             mediaPlayer.start();
-                        }else if(melodyName.equals("bip")){
-                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.bip_sound);
+                        }else if(melodyName.equals("sound-bell-3")){
+                            MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.sound_bell_2);
                             mediaPlayer.start();
                         }
 
